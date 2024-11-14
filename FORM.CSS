@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #131b47;
+}
+/* inicio del menu */
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+.logo img {
+    width: 150px; 
+    height: 150px;
+    margin-right: 70px; 
+}
+nav {
+    flex-grow: 1;
+}
+.menu {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: grey;
+    border-radius: 15px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+}
+.submenu li {
+    width: 200px;
+    height: 30px;
+}
+.submenu li a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.submenu li a:hover {
+    background-color: #575757;
+}
+.menu > li:hover .submenu {
+    display: block;
+}
+
+/* FORMULARIO */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color:rgb(2, 2, 49);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+form{
+    padding: 20px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 34px;
+}
+p{
+    color: white;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group input[type="radio"] {
+    width: auto;
+}
+.form-group input[type="date"] {
+    padding: 7px;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group .radio-group {
+    display: flex;
+    gap: 10px;
+}
+.form-group .radio-group label {
+    margin-bottom: 0;
+}
+.form-group .radio-group input {
+    margin-left: 5px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color:#13193b;
+}
+footer {
+    background-color:#13192b; 
+    color: white; 
+    text-align: center; 
+    padding: 25px;
+    margin: 15px 0px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+footer a {
+    color: #007BFF;
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+

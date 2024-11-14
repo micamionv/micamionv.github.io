@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to bottom, #a5a3a3, #e6e5e4);
+    color: white;
+}
+/* inicio del menu */
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.logo img {
+    width: 350px;
+    height:250px;
+    margin-right: 10px;
+}
+nav {
+    flex: 1;
+    width: 100%;
+}
+.menu {
+    width: 100%;
+    font-size: 12px;
+    list-style-type: none;
+}
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu > li > a:hover {
+    background-color: gray;
+    border-radius: 20px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+}
+.submenu li {
+    width: 240px;
+    height: 30px;
+}
+.submenu li a {
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.submenu li a:hover {
+    background-color: #575757;
+}
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.recuadro{
+    margin: 100px;
+    text-align: center;
+    padding: 50px;
+    border:2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color:grey;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 3px solid  white;
+}
+/* SISTEMA ELECTRICO */
+h1{
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 5px  #333 ;
+}
+p{
+    text-shadow: 0px 2px 5px  #fff ;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
